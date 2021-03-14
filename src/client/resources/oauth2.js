@@ -85,7 +85,11 @@ function login() {
     }
 
     if (! this.isRefreshTokenExpired()) {
-        return this.refreshAccessToken()
+        if (this.isRefreshTokenExpiringSoon()) {
+            return this.refreshRefreshToken()
+        } else {
+            return this.refreshAccessToken()
+        }
     }
 
     return this.authorize()

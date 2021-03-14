@@ -57,6 +57,7 @@ function refreshAndRetry(client) {
             && ! originalRequest._retry
             && originalRequest.url !== '/oauth2/token'
 
+        // TODO: Do we need to determine if it is access or refresh token here?
         if (condition) {
             originalRequest._retry = true
             return client.refreshAccessToken().then(() => {

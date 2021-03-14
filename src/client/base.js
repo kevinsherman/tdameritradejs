@@ -67,6 +67,7 @@ function on(event, fn) {
 Base.prototype.on = on
 Base.prototype.getAccessToken = tokens.getAccessToken
 Base.prototype.refreshAccessToken = tokens.refreshAccessToken
+Base.prototype.refreshRefreshToken = tokens.refreshRefreshToken
 Base.prototype.isAccessTokenExpired = tokens.isAccessTokenExpired
 Base.prototype.isRefreshTokenExpired = tokens.isRefreshTokenExpired
 
