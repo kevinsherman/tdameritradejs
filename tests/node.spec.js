@@ -156,7 +156,7 @@ describe('TDAmeritrade (Node.js)', () => {
             }))
             const mockAuthorize = jest.spyOn(td, 'authorize')
             mockAuthorize.mockImplementation(() => Promise.resolve())
-            const mockRefresh = jest.spyOn(td, 'refreshAccessToken')
+            const mockRefresh = jest.spyOn(td, 'isRefreshTokenExpiringSoon')
             mockRefresh.mockImplementation(() => Promise.resolve())
             return td.login().then(() => {
                 expect(mockAuthorize).not.toHaveBeenCalled()

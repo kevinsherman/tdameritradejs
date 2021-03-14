@@ -715,7 +715,6 @@ describe('Client', () => {
                     expect(res.params).toBeUndefined()
                     expect(res.data).toEqual({
                         grant_type: 'refresh_token',
-                        access_type: 'offline',
                         client_id: 'testClientId@AMER.OAUTHAP',
                         refresh_token: 'test_refresh_token',
                     })
@@ -735,7 +734,6 @@ describe('Client', () => {
                     expect(res.params).toBeUndefined()
                     expect(res.data).toEqual({
                         grant_type: 'refresh_token',
-                        access_type: 'offline',
                         client_id: 'testClientId@AMER.OAUTHAP',
                         refresh_token: 'some_refresh_token',
                     })

@@ -70,5 +70,6 @@ Base.prototype.refreshAccessToken = tokens.refreshAccessToken
 Base.prototype.refreshRefreshToken = tokens.refreshRefreshToken
 Base.prototype.isAccessTokenExpired = tokens.isAccessTokenExpired
 Base.prototype.isRefreshTokenExpired = tokens.isRefreshTokenExpired
+Base.prototype.isRefreshTokenExpiringSoon = tokens.isRefreshTokenExpiringSoon
 
 module.exports = Base
