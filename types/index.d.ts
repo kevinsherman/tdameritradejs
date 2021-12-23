@@ -947,7 +947,7 @@ export type PriceHistoryQuery = {
      *      - `year` : 1*, 2, 3, 5, 10, 15, 20
      *      - `ytd` : 1*
      */
-    period: 1|2|3|4|5|6|10|15|20;
+    period?: 1|2|3|4|5|6|10|15|20;
     /**
      * The type of frequency with which a new candle is formed
      *      - `day` : minute*
